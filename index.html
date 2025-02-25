@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-    </head>
-    
-    <body>
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the main page of my portfolio.</p>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welkom! Ik ben [Jouw Naam]</h1>
+        <p>Student Web Development | HTML, CSS & JS</p>
+        <nav>
+            <a href="#about">Over Mij</a>
+            <a href="#projects">Projecten</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <section id="about">
+        <h2>Over Mij</h2>
+        <p>Ik ben een student webdevelopment en leer HTML, CSS en JavaScript. Mijn doel is om coole websites te maken!</p>
+    </section>
 
-        <main>
-            <section>
-                <h2>About Me</h2>
-                <p>My name is John Doe and I am a web developer.</p>
-            </section>
-        </main>
-        
-        <footer></footer>
-    </body>
+    <section id="projects">
+        <h2>Mijn Projecten</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Korte beschrijving van je project.</p>
+            <a href="#">Bekijk project</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Mijn Skills</h2>
+        <ul>
+            <li>✅ HTML</li>
+            <li>✅ CSS</li>
+            <li>✅ JavaScript (basis)</li>
+            <li>✅ Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Je kunt me bereiken via:</p>
+        <ul>
+            <li>📩 Email: jouwmail@example.com</li>
+            <li>💻 GitHub: <a href="#">github.com/jouwnaam</a></li>
+            <li>🔗 LinkedIn: <a href="#">linkedin.com/in/jouwnaam</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Jouw Naam] - Portfolio</p>
+    </footer>
+</body>
 </html>
