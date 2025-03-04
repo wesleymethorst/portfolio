@@ -11,10 +11,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="pages/about.html">About Me</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="pages/skills.html">Skills</a></li>
-                <li><a href="pages/contacts.html">Contact</a></li>
+                <li><a href="">About Me</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </header>
