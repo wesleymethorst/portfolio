@@ -1,13 +1,113 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  </body>
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mijn Portfolio - Home</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-100 text-gray-900">
+        <!-- Header -->
+        <header class="fixed top-4 left-1/2 transform -translate-x-1/2 bg-white shadow-md rounded-lg px-8 py-3 flex space-x-6 z-50">
+            <a href="#homepage" class="text-gray-600 hover:text-purple-500 transition">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+            </a>
+            <a href="#aboutme" class="text-gray-600 hover:text-purple-500 transition">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+            </a>
+            <a href="#projects" class="text-gray-600 hover:text-purple-500 transition">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 6h5l2 2h9a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
+                </svg>
+            </a>
+            
+        </header>
+
+        <!-- Main -->
+        <main class="w-full">
+            <!-- Homepage Section -->
+            <section id="homepage" class="bg-white min-h-screen flex flex-col items-center justify-center text-center relative">
+                <div>
+                    <h1 class="text-3xl font-bold text-purple-600">Welkom op mijn Portfolio</h1>
+                    <p class="text-gray-600 mt-2">Ontdek mijn werk en projecten.</p>
+                </div>
+
+                <!-- Scroll Down Button -->
+                <a href="#aboutme" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 hover:text-purple-500 transition animate-bounce">
+                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                    </svg>
+                </a>
+            </section>
+
+            <!-- About Me Section -->
+            <section id="aboutme" class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4">Over Mij</h2>
+                    <p class="text-gray-700">Dit is een korte beschrijving over wie ik ben en wat ik doe.</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="bg-gray-100 min-h-screen flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4">Projecten</h2>
+                    <p class="text-gray-700">Bekijk hier enkele van mijn recente projecten.</p>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
+                <div>
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4">Contact</h2>
+                    <p class="text-gray-700">Neem contact met me op voor samenwerkingen.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="w-full bg-white shadow-md py-6 flex items-center justify-between px-8 text-gray-500 text-sm">
+            <!-- Social Icons aan de linkerkant -->
+            <div class="flex space-x-6">
+                <!-- GitHub -->
+                <a href="https://github.com/wesleymethorst" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 2-5-3-7-4m14 8v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18.5 4a5.07 5.07 0 0 0-.09-3S17.09.65 15 2.48a13.38 13.38 0 0 0-6 0C7.09.65 5.59 1 5.59 1a5.07 5.07 0 0 0-.09 3A5.44 5.44 0 0 0 2.5 10c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 19.13V23"/>
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/wesley-methorst-6b93651b9" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-6a6 6 0 0 1 6-6z"/>
+                        <rect x="2" y="9" width="4" height="12"/>
+                        <circle cx="4" cy="4" r="2"/>
+                    </svg>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/wesleymethorst" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37a4 4 0 1 1-4.63-4.63 4 4 0 0 1 4.63 4.63z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+            </div>
+        
+            <!-- Midden gecentreerde tekst -->
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+                <p>Wesley Methorst - 2025</p>
+                <p>&copy; 2025 All rights reserved</p>
+            </div>
+        
+            <!-- Lege div voor icons -->
+            <div class="w-12"></div>
+        </footer>
+        
+    </body>
 </html>
