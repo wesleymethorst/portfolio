@@ -21,18 +21,28 @@
                     <path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg>
             </a>
+            <a href="#skills" class="text-gray-600 hover:text-purple-500 transition">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2l1.09 3.36L16.5 6l-2.64 1.91L14.18 12l-2.18-1.59L9.82 12l.32-4.09L7.5 6l3.41-.64L12 2z"/>
+                    <path d="M12 22v-6M6 22v-6M18 22v-6"/>
+                </svg>
+            </a>
             <a href="#projects" class="text-gray-600 hover:text-purple-500 transition">
                 <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M3 6h5l2 2h9a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/>
                 </svg>
             </a>
-            
+            <a href="#contact" class="text-gray-600 hover:text-purple-500 transition">
+                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2.08 2.08 0 0 1-2.29 2.08A19.91 19.91 0 0 1 2 4.29 2.08 2.08 0 0 1 4.08 2h3a2.08 2.08 0 0 1 2.08 1.72 13.44 13.44 0 0 0 .73 2.81 2.08 2.08 0 0 1-.47 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2.08 2.08 0 0 1 2.11-.47 13.44 13.44 0 0 0 2.81.73A2.08 2.08 0 0 1 22 16.92z"/>
+                </svg>
+            </a>
         </header>
 
         <!-- Main -->
         <main class="w-full">
             <!-- Homepage Section -->
-            <section class="relative min-h-screen flex flex-col items-center justify-center bg-white">
+            <section id="homepage" class="relative min-h-screen flex flex-col items-center justify-center bg-white">
                 <div class="text-left px-8 absolute left-0 sm:left-10 md:left-20">
                     <h1 class="text-5xl font-bold text-gray-600 font-poppins">I'M <span class="text-5xl font-bold text-purple-600 font-poppins">WESLEY METHORST</span></h1>
                     <p class="text-2xl text-gray-600 mt-2 font-poppins">FULL STACK DEVELOPER</p>
@@ -66,40 +76,113 @@
             <section id="skills" class="bg-white min-h-screen flex items-center justify-center text-center py-10">
                 <div class="w-full max-w-6xl mx-auto">
                     <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Skills</h2>
-                    <div class="flex flex-wrap justify-center gap-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         <!-- Skill Box 1 -->
-                        <a href="https://www.w3.org/html/" target="_blank" class="w-72 bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300">
+                        <a href="https://www.lua.org/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#000080]">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/Lua.svg" alt="Lua" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">Lua</h3>
+                            <p class="text-gray-600 mt-2">Lightweight, high-level, multi-paradigm programming language.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">95%</span>
+                            </div>
+                        </a>
+                        
+                        <!-- Skill Box 2 -->
+                        <a href="https://www.w3.org/html/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#f16529]">
                             <div class="w-20 h-20 mx-auto mb-4">
                                 <img src="images/HTML5.svg" alt="HTML" class="w-full h-full object-contain">
                             </div>
                             <h3 class="text-xl font-semibold text-gray-700">HTML</h3>
                             <p class="text-gray-600 mt-2">Markup language for creating content on the web.</p>
                             <div class="mt-4">
-                                <span class="text-2xl font-bold text-purple-600">100%</span>
+                                <span class="text-2xl font-bold text-purple-600">90%</span>
                             </div>
                         </a>
-                        
-                        <!-- Skill Box 2 -->
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="w-72 bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300">
+
+                        <!-- Skill Box 3 -->
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#1572b6]">
                             <div class="w-20 h-20 mx-auto mb-4">
                                 <img src="images/CSS3.svg" alt="CSS" class="w-full h-full object-contain">
                             </div>
                             <h3 class="text-xl font-semibold text-gray-700">CSS</h3>
                             <p class="text-gray-600 mt-2">Style sheet language for designing web pages.</p>
                             <div class="mt-4">
-                                <span class="text-2xl font-bold text-purple-600">85%</span>
+                                <span class="text-2xl font-bold text-purple-600">80%</span>
                             </div>
                         </a>
 
-                        <!-- Skill Box 3 -->
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="w-72 bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300">
+                        <!-- Skill Box 4 -->
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#f0db4f]">
                             <div class="w-20 h-20 mx-auto mb-4">
                                 <img src="images/JavaScript.svg" alt="JavaScript" class="w-full h-full object-contain">
                             </div>
                             <h3 class="text-xl font-semibold text-gray-700">JavaScript</h3>
                             <p class="text-gray-600 mt-2">Dynamic language for web interactivity.</p>
                             <div class="mt-4">
-                                <span class="text-2xl font-bold text-purple-600">90%</span>
+                                <span class="text-2xl font-bold text-purple-600">75%</span>
+                            </div>
+                        </a>
+
+                        <!-- Add more skills as needed -->
+                        <!-- Skill Box 5 -->
+                        <a href="https://nodejs.org/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#83cd29]">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/Nodejs.svg" alt="Node.js" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">Node.js</h3>
+                            <p class="text-gray-600 mt-2">JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">70%</span>
+                            </div>
+                        </a>
+
+                        <!-- Skill Box 6 -->
+                        <a href="https://www.mysql.com/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#00618a]">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/MySQL.svg" alt="MySQL" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">MySQL</h3>
+                            <p class="text-gray-600 mt-2">Open-source relational database management system.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">70%</span>
+                            </div>
+                        </a>
+
+                        <!-- Skill Box 7 -->
+                        <a href="https://tailwindcss.com/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#38bdf8]">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/TailwindCSS.svg" alt="Tailwind CSS" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">Tailwind CSS</h3>
+                            <p class="text-gray-600 mt-2">Utility-first CSS framework for rapid UI development.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">60%</span>
+                            </div>
+                        </a>
+
+                        <!-- Skill Box 8 -->
+                        <a href="https://www.mongodb.com/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#439934]">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/MongoDB.svg" alt="MongoDB" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">MongoDB</h3>
+                            <p class="text-gray-600 mt-2">NoSQL database for modern applications.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">50%</span>
+                            </div>
+                        </a>
+
+                        <!-- Skill Box 9 -->
+                        <a href="https://www.php.net/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#777bb3]">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/PHP.svg" alt="PHP" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">PHP</h3>
+                            <p class="text-gray-600 mt-2">Popular general-purpose scripting language for web development.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">20%</span>
                             </div>
                         </a>
                     </div>
@@ -108,7 +191,7 @@
 
 
             <!-- Projects Section -->
-            <section class="bg-gray-100 min-h-screen flex items-center justify-center text-center">
+            <section id="projects" class="bg-gray-100 min-h-screen flex items-center justify-center text-center">
                 <div>
                     <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Projecten</h2>
                     <p class="text-gray-700 font-poppins">Bekijk hier enkele van mijn recente projecten.</p>
@@ -116,7 +199,7 @@
             </section>
 
             <!-- Contact Section -->
-            <section class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
+            <section id="contact" class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
                 <div>
                     <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Contact</h2>
                     <p class="text-gray-700 font-poppins">Neem contact met me op voor samenwerkingen.</p>
@@ -162,7 +245,5 @@
             <!-- Extra ruimte voor consistentie -->
             <div class="w-12"></div>
         </footer>
-        
-        
     </body>
 </html>
