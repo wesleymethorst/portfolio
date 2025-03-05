@@ -31,19 +31,22 @@
         <!-- Main -->
         <main class="w-full">
             <!-- Homepage Section -->
-            <section id="homepage" class="bg-white min-h-screen flex flex-col items-center justify-center text-center relative">
+            <section class="relative bg-white min-h-screen flex flex-col items-center justify-center text-center">
                 <div>
                     <h1 class="text-3xl font-bold text-purple-600">Welkom op mijn Portfolio</h1>
                     <p class="text-gray-600 mt-2">Ontdek mijn werk en projecten.</p>
                 </div>
-
-                <!-- Scroll Down Button -->
-                <a href="#aboutme" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-gray-600 hover:text-purple-500 transition animate-bounce">
-                    <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
-                    </svg>
-                </a>
+  
+                <!-- Arrow down  -->
+                <div class="absolute bottom-10 w-full flex justify-center">
+                    <a href="#aboutme" class="text-gray-600 hover:text-purple-500 transition animate-bounce">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                        </svg>
+                    </a>
+                </div>
             </section>
+
 
             <!-- About Me Section -->
             <section id="aboutme" class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
@@ -70,16 +73,16 @@
             </section>
         </main>
 
-        <footer class="w-full bg-white shadow-md py-6 flex items-center justify-between px-8 text-gray-500 text-sm">
-            <!-- Social Icons aan de linkerkant -->
-            <div class="flex space-x-6">
+        <footer class="w-full bg-white shadow-md py-6 flex flex-col md:flex-row items-center justify-between px-4 md:px-8 text-gray-500 text-sm">
+            <!-- Social Icons -->
+            <div class="flex space-x-6 mb-4 md:mb-0">
                 <!-- GitHub -->
                 <a href="https://github.com/wesleymethorst" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition">
                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M9 19c-5 2-5-3-7-4m14 8v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 18.5 4a5.07 5.07 0 0 0-.09-3S17.09.65 15 2.48a13.38 13.38 0 0 0-6 0C7.09.65 5.59 1 5.59 1a5.07 5.07 0 0 0-.09 3A5.44 5.44 0 0 0 2.5 10c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 19.13V23"/>
                     </svg>
                 </a>
-
+        
                 <!-- LinkedIn -->
                 <a href="https://linkedin.com/in/wesley-methorst-6b93651b9" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition">
                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -88,7 +91,7 @@
                         <circle cx="4" cy="4" r="2"/>
                     </svg>
                 </a>
-
+        
                 <!-- Instagram -->
                 <a href="https://instagram.com/wesleymethorst" target="_blank" rel="noopener noreferrer" class="hover:text-purple-500 transition">
                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -98,16 +101,17 @@
                     </svg>
                 </a>
             </div>
-        
+            
             <!-- Midden gecentreerde tekst -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+            <div class="text-center">
                 <p>Wesley Methorst - 2025</p>
                 <p>&copy; 2025 All rights reserved</p>
             </div>
-        
-            <!-- Lege div voor icons -->
+            
+            <!-- Extra ruimte voor consistentie -->
             <div class="w-12"></div>
         </footer>
+        
         
     </body>
 </html>
