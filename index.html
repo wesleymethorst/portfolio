@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mijn Portfolio - Home</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">       
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
@@ -31,19 +32,24 @@
         <!-- Main -->
         <main class="w-full">
             <!-- Homepage Section -->
-            <section class="relative bg-white min-h-screen flex flex-col items-center justify-center text-center">
-                <div>
-                    <h1 class="text-3xl font-bold text-purple-600">Welkom op mijn Portfolio</h1>
-                    <p class="text-gray-600 mt-2">Ontdek mijn werk en projecten.</p>
+            <section class="relative min-h-screen flex flex-col items-center justify-center bg-white">
+                <div class="text-left px-8 absolute left-0 sm:left-10 md:left-20">
+                    <h1 class="text-5xl font-bold text-gray-600 font-poppins">I'M <span class="text-5xl font-bold text-purple-600 font-poppins">WESLEY METHORST</span></h1>
+                    <p class="text-2xl text-gray-600 mt-2 font-poppins">FULL STACK DEVELOPER</p>
                 </div>
   
                 <!-- Arrow down  -->
-                <div class="absolute bottom-10 w-full flex justify-center">
+                <div class="absolute bottom-4 w-full flex justify-center">
                     <a href="#aboutme" class="text-gray-600 hover:text-purple-500 transition animate-bounce">
                         <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
                         </svg>
                     </a>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    
                 </div>
             </section>
 
@@ -51,24 +57,69 @@
             <!-- About Me Section -->
             <section id="aboutme" class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
                 <div>
-                    <h2 class="text-2xl font-semibold text-purple-600 mb-4">Over Mij</h2>
-                    <p class="text-gray-700">Dit is een korte beschrijving over wie ik ben en wat ik doe.</p>
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Over Mij</h2>
+                    <p class="text-gray-700 font-poppins">Dit is een korte beschrijving over wie ik ben en wat ik doe.</p>
                 </div>
             </section>
 
+            <!-- Skills Section -->
+            <section id="skills" class="bg-white min-h-screen flex items-center justify-center text-center py-10">
+                <div class="w-full max-w-6xl mx-auto">
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Skills</h2>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <!-- Skill Box 1 -->
+                        <a href="https://www.w3.org/html/" target="_blank" class="w-72 bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/HTML5.svg" alt="HTML" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">HTML</h3>
+                            <p class="text-gray-600 mt-2">Markup language for creating content on the web.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">100%</span>
+                            </div>
+                        </a>
+                        
+                        <!-- Skill Box 2 -->
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="w-72 bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/CSS3.svg" alt="CSS" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">CSS</h3>
+                            <p class="text-gray-600 mt-2">Style sheet language for designing web pages.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">85%</span>
+                            </div>
+                        </a>
+
+                        <!-- Skill Box 3 -->
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="w-72 bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300">
+                            <div class="w-20 h-20 mx-auto mb-4">
+                                <img src="images/JavaScript.svg" alt="JavaScript" class="w-full h-full object-contain">
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-700">JavaScript</h3>
+                            <p class="text-gray-600 mt-2">Dynamic language for web interactivity.</p>
+                            <div class="mt-4">
+                                <span class="text-2xl font-bold text-purple-600">90%</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
             <!-- Projects Section -->
-            <section id="projects" class="bg-gray-100 min-h-screen flex items-center justify-center text-center">
+            <section class="bg-gray-100 min-h-screen flex items-center justify-center text-center">
                 <div>
-                    <h2 class="text-2xl font-semibold text-purple-600 mb-4">Projecten</h2>
-                    <p class="text-gray-700">Bekijk hier enkele van mijn recente projecten.</p>
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Projecten</h2>
+                    <p class="text-gray-700 font-poppins">Bekijk hier enkele van mijn recente projecten.</p>
                 </div>
             </section>
 
             <!-- Contact Section -->
-            <section id="contact" class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
+            <section class="bg-gray-50 min-h-screen flex items-center justify-center text-center">
                 <div>
-                    <h2 class="text-2xl font-semibold text-purple-600 mb-4">Contact</h2>
-                    <p class="text-gray-700">Neem contact met me op voor samenwerkingen.</p>
+                    <h2 class="text-2xl font-semibold text-purple-600 mb-4 font-poppins">Contact</h2>
+                    <p class="text-gray-700 font-poppins">Neem contact met me op voor samenwerkingen.</p>
                 </div>
             </section>
         </main>
@@ -103,7 +154,7 @@
             </div>
             
             <!-- Midden gecentreerde tekst -->
-            <div class="text-center">
+            <div class="text-center font-poppins">
                 <p>Wesley Methorst - 2025</p>
                 <p>&copy; 2025 All rights reserved</p>
             </div>
