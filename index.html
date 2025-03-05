@@ -6,6 +6,7 @@
         <title>Mijn Portfolio - Home</title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">       
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js" defer></script>
     </head>
 
     <body class="bg-gray-100 text-gray-900">
@@ -44,7 +45,7 @@
             <!-- Homepage Section -->
             <section id="homepage" class="relative min-h-screen flex flex-col items-center justify-center bg-white">
                 <div class="text-left px-8 absolute left-0 sm:left-10 md:left-20">
-                    <h1 class="text-5xl font-bold text-gray-600 font-poppins">I'M <span class="text-5xl font-bold text-purple-600 font-poppins">WESLEY METHORST</span></h1>
+                    <h1 class="text-5xl font-bold text-gray-600 font-poppins">I'M <span id="rotating-text" class="text-5xl font-bold text-purple-600 font-poppins"></span></h1>
                     <p class="text-2xl text-gray-600 mt-2 font-poppins">FULL STACK DEVELOPER</p>
                 </div>
   
@@ -58,8 +59,8 @@
                 </div>
 
                 <!-- Image -->
-                <div>
-                    
+                <div class="mt-6">
+                    <!-- Voeg eventueel een afbeelding toe of gebruik deze sectie voor extra content -->
                 </div>
             </section>
 
@@ -92,7 +93,7 @@
                         </a>
                         
                         <!-- Skill Box 2 -->
-                        <a href="https://www.w3.org/html/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#f16529]">
+                        <a href="https://www.w3schools.com/html/" target="_blank" class="bg-white rounded-lg shadow-md p-6 hover:scale-105 transform transition duration-300 hover:shadow-[#f16529]">
                             <div class="w-20 h-20 mx-auto mb-4">
                                 <img src="images/HTML5.svg" alt="HTML" class="w-full h-full object-contain">
                             </div>
