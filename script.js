@@ -34,10 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         if (scrollTop > lastScrollTop) {
             // Scroll down
-            navbar.style.transform = 'translateY(-100%)';
+            navbar.classList.remove('top-4');
+            navbar.classList.add('-top-24');
         } else {
             // Scroll up
-            navbar.style.transform = 'translateY(0)';
+            navbar.classList.remove('-top-24');
+            navbar.classList.add('top-4');
         }
         lastScrollTop = scrollTop;
     });
