@@ -29,18 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let lastScrollTop = 0;
     const navbar = document.getElementById('navbar');
-
+    
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
         if (scrollTop > lastScrollTop) {
             // Scroll down
             navbar.classList.remove('top-4');
-            navbar.classList.add('-top-24');
+            navbar.classList.add('-translate-y-full');  // Verberg navbar door naar boven te verschuiven
         } else {
             // Scroll up
-            navbar.classList.remove('-top-24');
-            navbar.classList.add('top-4');
+            navbar.classList.remove('-translate-y-full');
+            navbar.classList.add('translate-y-0');  // Zet navbar terug naar zijn oorspronkelijke positie
         }
+    
         lastScrollTop = scrollTop;
     });
+    
 });
