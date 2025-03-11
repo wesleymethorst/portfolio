@@ -27,20 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     type();
 
-    // let lastScrollTop = 0;
-    // const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+    const navbar = document.getElementById('navbar');
 
-    // window.addEventListener('scroll', function() {
-    //     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    //     if (scrollTop > lastScrollTop) {
-    //         // Scroll down
-    //         navbar.classList.remove('top-4');
-    //         navbar.classList.add('-top-24');
-    //     } else {
-    //         // Scroll up
-    //         navbar.classList.remove('-top-24');
-    //         navbar.classList.add('top-4');
-    //     }
-    //     lastScrollTop = scrollTop;
-    // });
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            // Scroll down
+            navbar.classList.remove('top-4');
+            navbar.classList.add('-top-24');
+        } else {
+            // Scroll up
+            navbar.classList.remove('-top-24');
+            navbar.classList.add('top-4');
+        }
+        lastScrollTop = scrollTop;
+    });
 });
