@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (scrollTop > lastScrollTop) {
             // Scroll down
             navbar.classList.remove('top-4');
-            navbar.classList.add('-translate-y-full');  // Verberg navbar door naar boven te verschuiven
+            navbar.classList.add('-translate-y-full');
         } else {
             // Scroll up
             navbar.classList.remove('-translate-y-full');
-            navbar.classList.add('translate-y-0');  // Zet navbar terug naar zijn oorspronkelijke positie
+            navbar.classList.add('top-4');
         }
     
         lastScrollTop = scrollTop;
