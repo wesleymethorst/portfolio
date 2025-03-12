@@ -391,7 +391,8 @@
                 <div class="w-full max-w-lg mx-auto">
                     <h2 class="text-5xl font-bold text-purple-600 mb-4 font-poppins">CONTACT</h2>
                     <p class="text-2xl text-gray-600 font-poppins mb-6">Feel free to reach out to me by filling out the form below.</p>
-                    <form action="https://formspree.io/f/xblgjapp" method="POST">
+                    <!-- <form action="https://formspree.io/f/xblgjapp" method="POST"> -->
+                        <form action="contact.php" method="POST">
                         <div>
                             <label for="name" class="block text-left text-gray-700 font-poppins">Name</label>
                             <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600" required>
